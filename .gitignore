@@ -1,0 +1,19 @@
+
+#********** vim template********** 
+
+.*.sw[a-z]
+*.un~
+Session.vim
+ 
+
+#********** OSX template********** 
+
+.DS_Store
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+ 
