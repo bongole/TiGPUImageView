@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: My module
+author: Your Name
+license: Specify your license
+copyright: Copyright (c) 2013 by Your Company
+
+
+# these should not be edited
+name: android
+moduleid: com.bongole.ti.gpuimage
+guid: f236601d-1892-4c06-be85-b956da88dc47
+platform: android
+minsdk: 3.0.2.GA
