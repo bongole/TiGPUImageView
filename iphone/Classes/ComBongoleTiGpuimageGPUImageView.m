@@ -6,7 +6,10 @@
  */
 
 #import "ComBongoleTiGpuimageGPUImageView.h"
+#import "GPUImageFilter.h"
 #import "GPUImageSepiaFilter.h"
+#import "GPUImageMonochromeFilter.h"
+#import "GPUImageGrayscaleFilter.h"
 #import <objc/runtime.h>
 
 @implementation ComBongoleTiGpuimageGPUImageView
@@ -31,10 +34,16 @@
         }
         
         GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:original_image];
-        GPUImageSepiaFilter *stillImageFilter;
+        GPUImageFilter *stillImageFilter;
         
-        if( [@"Sepia" isEqualToString:filterType] ){
+        if( [kSepiaFilter isEqualToString:filterType] ){
             stillImageFilter = [[GPUImageSepiaFilter alloc] init];
+        }
+        else if( [kMonochromeFilter isEqualToString:filterType] ){
+            stillImageFilter = [[GPUImageMonochromeFilter alloc] init];
+        }
+        else if( [kGrayscaleFilter isEqualToString:filterType] ){
+            stillImageFilter = [[GPUImageGrayscaleFilter alloc] init];
         }
         else{
             [imageview setImage:original_image];

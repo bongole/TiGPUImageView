@@ -7,6 +7,7 @@
 #import "TiUIView.h"
 #import "TiUIImageView.h"
 #import "GPUImagePicture.h"
+#import "Constants.h"
 
 @interface ComBongoleTiGpuimageGPUImageView : TiUIImageView {
 

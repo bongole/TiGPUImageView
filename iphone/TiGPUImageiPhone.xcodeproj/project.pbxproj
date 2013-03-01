@@ -338,10 +338,12 @@
 		0070D6CB16DF36C900E03578 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070D6CA16DF36C900E03578 /* OpenGLES.framework */; };
 		0070D6CD16DF36D200E03578 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070D6CC16DF36D200E03578 /* AVFoundation.framework */; };
 		0070D6CF16DF36DA00E03578 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0070D6CE16DF36DA00E03578 /* QuartzCore.framework */; };
-		0070D6D216DF3DF200E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0070D6D016DF3D3100E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.h */; };
-		0070D6D316DF3DFA00E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070D6D116DF3D3100E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.m */; };
-		0070D6D616DF3EFF00E03578 /* ComBongoleTiGpuimageGPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0070D6D516DF3EEC00E03578 /* ComBongoleTiGpuimageGPUImageView.m */; };
-		0070D6D716DF3F0900E03578 /* ComBongoleTiGpuimageGPUImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0070D6D416DF3EEC00E03578 /* ComBongoleTiGpuimageGPUImageView.h */; };
+		00CBE15816E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00CBE15416E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.h */; };
+		00CBE15916E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CBE15516E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.m */; };
+		00CBE15A16E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 00CBE15616E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.h */; };
+		00CBE15B16E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CBE15716E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.m */; };
+		00CBE15E16E07FF1002062D6 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 00CBE15C16E07FF1002062D6 /* Constants.h */; };
+		00CBE15F16E07FF1002062D6 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CBE15D16E07FF1002062D6 /* Constants.m */; };
 		24DD6CF91134B3F500162E58 /* ComBongoleTiGpuimageModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* ComBongoleTiGpuimageModule.h */; };
 		24DD6CFA1134B3F500162E58 /* ComBongoleTiGpuimageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* ComBongoleTiGpuimageModule.m */; };
 		24DE9E1111C5FE74003F90F6 /* ComBongoleTiGpuimageModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* ComBongoleTiGpuimageModuleAssets.h */; };
@@ -678,10 +680,12 @@
 		0070D6CA16DF36C900E03578 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		0070D6CC16DF36D200E03578 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0070D6CE16DF36DA00E03578 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0070D6D016DF3D3100E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBongoleTiGpuimageGPUImageViewProxy.h; sourceTree = "<group>"; };
-		0070D6D116DF3D3100E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBongoleTiGpuimageGPUImageViewProxy.m; sourceTree = "<group>"; };
-		0070D6D416DF3EEC00E03578 /* ComBongoleTiGpuimageGPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComBongoleTiGpuimageGPUImageView.h; sourceTree = "<group>"; };
-		0070D6D516DF3EEC00E03578 /* ComBongoleTiGpuimageGPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComBongoleTiGpuimageGPUImageView.m; sourceTree = "<group>"; };
+		00CBE15416E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComBongoleTiGpuimageGPUImageView.h; path = Classes/ComBongoleTiGpuimageGPUImageView.h; sourceTree = "<group>"; };
+		00CBE15516E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComBongoleTiGpuimageGPUImageView.m; path = Classes/ComBongoleTiGpuimageGPUImageView.m; sourceTree = "<group>"; };
+		00CBE15616E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComBongoleTiGpuimageGPUImageViewProxy.h; path = Classes/ComBongoleTiGpuimageGPUImageViewProxy.h; sourceTree = "<group>"; };
+		00CBE15716E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComBongoleTiGpuimageGPUImageViewProxy.m; path = Classes/ComBongoleTiGpuimageGPUImageViewProxy.m; sourceTree = "<group>"; };
+		00CBE15C16E07FF1002062D6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Constants.h; sourceTree = "<group>"; };
+		00CBE15D16E07FF1002062D6 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = Classes/Constants.m; sourceTree = "<group>"; };
 		24DD6CF71134B3F500162E58 /* ComBongoleTiGpuimageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ComBongoleTiGpuimageModule.h; path = Classes/ComBongoleTiGpuimageModule.h; sourceTree = "<group>"; };
 		24DD6CF81134B3F500162E58 /* ComBongoleTiGpuimageModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComBongoleTiGpuimageModule.m; path = Classes/ComBongoleTiGpuimageModule.m; sourceTree = "<group>"; };
 		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
@@ -1065,14 +1069,16 @@
 			isa = PBXGroup;
 			children = (
 				0070D45616DF364700E03578 /* GPUImage */,
+				00CBE15416E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.h */,
+				00CBE15516E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.m */,
+				00CBE15616E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.h */,
+				00CBE15716E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.m */,
 				24DE9E0F11C5FE74003F90F6 /* ComBongoleTiGpuimageModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* ComBongoleTiGpuimageModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* ComBongoleTiGpuimageModule.h */,
-				0070D6D016DF3D3100E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.h */,
-				0070D6D116DF3D3100E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.m */,
-				0070D6D416DF3EEC00E03578 /* ComBongoleTiGpuimageGPUImageView.h */,
-				0070D6D516DF3EEC00E03578 /* ComBongoleTiGpuimageGPUImageView.m */,
 				24DD6CF81134B3F500162E58 /* ComBongoleTiGpuimageModule.m */,
+				00CBE15C16E07FF1002062D6 /* Constants.h */,
+				00CBE15D16E07FF1002062D6 /* Constants.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1093,8 +1099,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0070D6D716DF3F0900E03578 /* ComBongoleTiGpuimageGPUImageView.h in Headers */,
-				0070D6D216DF3DF200E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.h in Headers */,
 				0070D58F16DF365E00E03578 /* GLProgram.h in Headers */,
 				0070D59016DF365E00E03578 /* GPUImage.h in Headers */,
 				0070D59116DF365E00E03578 /* GPUImage3x3ConvolutionFilter.h in Headers */,
@@ -1254,6 +1258,9 @@
 				AA747D9F0F9514B9006C5449 /* ComBongoleTiGpuimage_Prefix.pch in Headers */,
 				24DD6CF91134B3F500162E58 /* ComBongoleTiGpuimageModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* ComBongoleTiGpuimageModuleAssets.h in Headers */,
+				00CBE15816E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.h in Headers */,
+				00CBE15A16E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.h in Headers */,
+				00CBE15E16E07FF1002062D6 /* Constants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1324,8 +1331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0070D6D616DF3EFF00E03578 /* ComBongoleTiGpuimageGPUImageView.m in Sources */,
-				0070D6D316DF3DFA00E03578 /* ComBongoleTiGpuimageGPUImageViewProxy.m in Sources */,
 				0070D62B16DF366F00E03578 /* GLProgram.m in Sources */,
 				0070D62C16DF366F00E03578 /* GPUImage3x3ConvolutionFilter.m in Sources */,
 				0070D62D16DF366F00E03578 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
@@ -1483,6 +1488,9 @@
 				0070D6C516DF367000E03578 /* GPUImageZoomBlurFilter.m in Sources */,
 				24DD6CFA1134B3F500162E58 /* ComBongoleTiGpuimageModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* ComBongoleTiGpuimageModuleAssets.m in Sources */,
+				00CBE15916E07F48002062D6 /* ComBongoleTiGpuimageGPUImageView.m in Sources */,
+				00CBE15B16E07F48002062D6 /* ComBongoleTiGpuimageGPUImageViewProxy.m in Sources */,
+				00CBE15F16E07FF1002062D6 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
