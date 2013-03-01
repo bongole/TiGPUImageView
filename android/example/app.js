@@ -1,39 +1,34 @@
-// This is a test harness for your module
-// You should do something interesting in this harness 
-// to test out the module and to provide instructions 
-// to users on how to use it by example.
+var win = Ti.UI.createWindow();
 
-
-// open a single window
-var win = Ti.UI.createWindow({
-	backgroundColor:'white'
-});
-var label = Ti.UI.createLabel();
-win.add(label);
-win.open();
-
-// TODO: write your module tests here
-var android = require('com.bongole.ti.gpuimage');
-Ti.API.info("module is => " + android);
-
-label.text = android.example();
-
-Ti.API.info("module exampleProp is => " + android.exampleProp);
-android.exampleProp = "This is a test value";
-
-if (Ti.Platform.name == "android") {
-	var proxy = android.createExample({
-		message: "Creating an example Proxy",
-		backgroundColor: "red",
-		width: 100,
-		height: 100,
-		top: 100,
-		left: 150
-	});
-
-	proxy.printMessage("Hello world!");
-	proxy.message = "Hi world!.  It's me again.";
-	proxy.printMessage("Hello world!");
-	win.add(proxy);
+if( false ){
+    // dummy for build
+    Ti.UI.createImageView({
+        image:'test.png'
+    })
 }
 
+var GI = require('com.bongole.ti.gpuimage');
+var iv = GI.createGPUImageView({
+    image: 'momokuro.jpg'
+})
+
+var sepia = true;
+var b = Ti.UI.createButton({
+    title: 'push',
+    top: 0
+})
+
+b.addEventListener('click', function(){
+    if( sepia ){
+        sepia = false;
+        iv.filter = GI.SEPIA_FILTER
+    }
+    else{
+        sepia = true;
+        iv.filter = null;
+    }
+})
+
+win.add(b);
+win.add(iv);
+win.open();

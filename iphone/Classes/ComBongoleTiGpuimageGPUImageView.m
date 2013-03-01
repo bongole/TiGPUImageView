@@ -18,7 +18,7 @@
 {
     ENSURE_TYPE_OR_NIL(args, NSString);
     
-    ENSURE_UI_THREAD_1_ARG(args);
+    //ENSURE_UI_THREAD_1_ARG(args);
     
     NSString *filterType = args;
     

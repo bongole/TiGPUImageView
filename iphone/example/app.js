@@ -1,5 +1,12 @@
 var win = Ti.UI.createWindow();
 
+if( false ){
+    // dummy for build
+    Ti.UI.createImageView({
+        image:'test.png'
+    })
+}
+
 var GI = require('com.bongole.ti.gpuimage');
 var iv = GI.createGPUImageView({
     image: 'momokuro.jpg'
@@ -14,7 +21,7 @@ var b = Ti.UI.createButton({
 b.addEventListener('click', function(){
     if( sepia ){
         sepia = false;
-        iv.filter = 'Sepia'
+        iv.filter = GI.SEPIA_FILTER
     }
     else{
         sepia = true;
