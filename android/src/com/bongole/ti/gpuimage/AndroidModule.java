@@ -23,6 +23,10 @@ public class AndroidModule extends KrollModule
 	// Standard Debugging variables
 	private static final String LCAT = "AndroidModule";
 	private static final boolean DBG = TiConfig.LOGD;
+	
+	@Kroll.constant public static final String SEPIA_FILTER = "sepia";
+	@Kroll.constant public static final String MONOCHROME_FILTER = "monochrome";
+	@Kroll.constant public static final String GRAYSCALE_FILTER = "grayscale";
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;

@@ -3,6 +3,8 @@ package com.bongole.ti.gpuimage;
 import java.util.ArrayList;
 
 import jp.co.cyberagent.android.gpuimage.GPUImage;
+import jp.co.cyberagent.android.gpuimage.GPUImageGrayscaleFilter;
+import jp.co.cyberagent.android.gpuimage.GPUImageMonochromeFilter;
 import jp.co.cyberagent.android.gpuimage.GPUImageSepiaFilter;
 
 import org.appcelerator.kroll.annotations.Kroll;
@@ -18,6 +20,8 @@ import ti.modules.titanium.ui.widget.TiImageView;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.util.Log;
+
+import com.bongole.ti.gpuimage.AndroidModule;
 
 @Kroll.proxy(creatableInModule=AndroidModule.class, propertyAccessors = {
 	"decodeRetries",
@@ -158,8 +162,14 @@ public class GPUImageViewProxy extends TiViewProxy
 			GPUImageView v = (GPUImageView) this.view;
 			GPUImage gpuImage = new GPUImage(v.getNativeView().getContext());
 			
-			if( "Sepia".equals(filterType) ){
+			if( AndroidModule.SEPIA_FILTER.equals(filterType) ){
 				gpuImage.setFilter(new GPUImageSepiaFilter());
+			}
+			else if( AndroidModule.MONOCHROME_FILTER.equals(filterType) ){
+				gpuImage.setFilter(new GPUImageMonochromeFilter());
+			}
+			else if( AndroidModule.GRAYSCALE_FILTER.equals(filterType) ){
+				gpuImage.setFilter(new GPUImageGrayscaleFilter());
 			}
 			else{
 				v.setImage(this.originalBitmap);
