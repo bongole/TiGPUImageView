@@ -33,9 +33,7 @@
             [self.proxy setValue:original_image forUndefinedKey:@"original_image"];
         }
         
-        GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:original_image];
         GPUImageFilter *stillImageFilter;
-        
         if( [kSepiaFilter isEqualToString:filterType] ){
             stillImageFilter = [[GPUImageSepiaFilter alloc] init];
         }
@@ -50,11 +48,17 @@
             return;
         }
         
+        GPUImagePicture *stillImageSource = [[GPUImagePicture alloc] initWithImage:original_image];
+        
         [stillImageSource addTarget:stillImageFilter];
         [stillImageSource processImage];
         
+        
         UIImage *currentFilteredImage = [stillImageFilter imageFromCurrentlyProcessedOutput];
         [imageview setImage:currentFilteredImage];
+        
+        [stillImageFilter release];
+        [stillImageSource release];
     }
 }
 
