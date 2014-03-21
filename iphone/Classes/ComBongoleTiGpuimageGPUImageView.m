@@ -10,17 +10,18 @@
 #import "GPUImageSepiaFilter.h"
 #import "GPUImageMonochromeFilter.h"
 #import "GPUImageGrayscaleFilter.h"
+#import "GPUImageFastBlurFilter.h"
 #import <objc/runtime.h>
 
 @implementation ComBongoleTiGpuimageGPUImageView
 
 -(void)setFilter_:(id)args
 {
-    ENSURE_TYPE_OR_NIL(args, NSString);
-    
+    // ENSURE_TYPE_OR_NIL(args, NSString);
+    ENSURE_SINGLE_ARG_OR_NIL(args, NSDictionary);
     //ENSURE_UI_THREAD_1_ARG(args);
     
-    NSString *filterType = args;
+	NSString *filterType = [args objectForKey:@"filtertype"];
     
     UIImageView *imageview;
     object_getInstanceVariable(self, "imageView", (void *)&imageview);
@@ -43,6 +44,10 @@
         else if( [kGrayscaleFilter isEqualToString:filterType] ){
             stillImageFilter = [[GPUImageGrayscaleFilter alloc] init];
         }
+        else if( [kFastBlurFilter isEqualToString:filterType] ){
+            stillImageFilter = [[GPUImageFastBlurFilter alloc] init];
+			[stillImageFilter setBlurSize:[TiUtils floatValue:[args objectForKey:@"blursize"]]];
+	    }
         else{
             [imageview setImage:original_image];
             return;
